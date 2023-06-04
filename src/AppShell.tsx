@@ -6,7 +6,12 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 function Home() {
   return (
     <div>
-      <h2>Home</h2>
+      <h1>LaravelPH: Home</h1>
+      <p>Welcome to LaravelPH website</p>
+      <p>The premiere community of Laravel developers in the Philippines.</p>
+      <p>
+        Site is being setup. For now use the <Link to="https://www.facebook.com/groups/laravelph/">LaravelPH</Link> facebook group to meet other artisans.
+      </p>
     </div>
   )
 }
