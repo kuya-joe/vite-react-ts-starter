@@ -4,9 +4,9 @@ export default function Login() {
     <div>
       <h2>Login</h2>
       <form>
-        <input name="email"/>
+        <input name="email"/><br />
         <input type="password" />
-        <Button />
+        <button type="submit">Login</button>
       </form>
     </div>
   )
