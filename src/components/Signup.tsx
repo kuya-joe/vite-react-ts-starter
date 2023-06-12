@@ -5,10 +5,12 @@ export default function Signup() {
     <div>
       <h2>Signup</h2>
       <form>
-        <input name="fullname "/>
-        <input name="email"/>
+        <input name="fullname" />
+        <input name="email" />
         <input type="password" />
-        <button color="primary">Join</button>
+        <button type="submit" color="primary">
+          Join
+        </button>
       </form>
     </div>
   )
