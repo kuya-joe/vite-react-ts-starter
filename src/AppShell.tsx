@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-
+import Signup  from './components/Signup'
+import Login from './components/Login'
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
 //
@@ -39,6 +40,10 @@ const AppShell = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/signup">Sign Up</Link>
+          </li>
+
+          <li>
             <Link to="/about">About</Link>
           </li>
         </ul>
@@ -55,6 +60,8 @@ const AppShell = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<Signup/>} />
+          <Route path="/login" element={<Login/>} />
         </Routes>
       </div>
     </Router>
