@@ -19,7 +19,10 @@ const Header: FC = () => {
                 <Link to="/">Home</Link>
               </li>
               <li  className="mr-2">
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/login">Login</Link>
+              </li>
+              <li  className="mr-2">
+                <Link to="/signup">Register</Link>
               </li>
               <li className="mr-2">
                 <Link to="/about">About</Link>
