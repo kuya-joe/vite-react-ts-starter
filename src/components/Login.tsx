@@ -48,7 +48,7 @@ export default function Login() {
           )}
         </FormControl>
 
-        <Button colorScheme='orange'>Login</Button>
+        <Button colorScheme='blue'>Login</Button>
       </form>
     </div>
   )

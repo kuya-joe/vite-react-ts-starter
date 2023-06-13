@@ -29,7 +29,7 @@ export default function Signup() {
       <FormControl isInvalid={isEmailError}>
           <FormLabel>Full Name</FormLabel>
           <Input type='email' value={formName} onChange={handleNameInputChange}/>
-          {!isEmailError ? (
+          {!isNameError ? (
             <FormHelperText>
               Enter your full name
             </FormHelperText>
@@ -61,11 +61,11 @@ export default function Signup() {
             <FormErrorMessage>Password is required.</FormErrorMessage>
           )}
         </FormControl>
-
-
-        <button type="submit" color="primary">
-          Join
-        </button>
+        <FormControl>
+          <Button colorScheme="blue">
+            Join
+          </Button>
+        </FormControl>
       </form>
     </div>
   )
