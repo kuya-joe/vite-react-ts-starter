@@ -13,13 +13,13 @@ export default function Signup() {
   const [formPassword, setFormPassword] = useState('')
   const [formName, setFormName] = useState('')
 
-  const handleNameInputChange = (e: React.SyntheticEvent) => setFormName(e.target.value)
+  const handleNameInputChange = (e: React.SyntheticEvent) => setFormName((e.target as HTMLInputElement).value)
   const isNameError = formName === ''
 
-  const handleEmailInputChange = (e: React.SyntheticEvent) => setFormEmail(e.target.value)
+  const handleEmailInputChange = (e: React.SyntheticEvent) => setFormEmail((e.target as HTMLInputElement).value)
   const isEmailError = formEmail === ''
 
-  const handlePasswordInputChange = (e: React.SyntheticEvent) => setFormPassword(e.target.value)
+  const handlePasswordInputChange = (e: React.SyntheticEvent) => setFormPassword((e.target as HTMLInputElement).value)
   const isPasswordError = formPassword === ''
 
   return (

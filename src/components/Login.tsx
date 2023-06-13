@@ -12,11 +12,11 @@ import {  FormControl,
 export default function Login() {
   const [formEmail, setFormEmail] = useState('')
   const [formPassword, setFormPassword] = useState('')
-  const handleEmailInputChange = (e: React.SyntheticEvent) => setFormEmail(e.target.value)
+  const handleEmailInputChange = (e: React.SyntheticEvent) => setFormEmail((e.target as HTMLInputElement).value)
 
   const isEmailError = formEmail === ''
 
-  const handlePasswordInputChange = (e: React.SyntheticEvent) => setFormPassword(e.target.value)
+  const handlePasswordInputChange = (e: React.SyntheticEvent) => setFormPassword((e.target as HTMLInputElement).value)
 
   const isPasswordError = formPassword === ''
 
